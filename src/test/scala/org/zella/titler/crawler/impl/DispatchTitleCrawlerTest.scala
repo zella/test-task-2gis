@@ -15,8 +15,8 @@ class DispatchTitleCrawlerTest extends Matchers with ScalaFutures {
 
   @Test
   def validUrlShouldReturnTitle(): Unit = {
-    whenReady(AsyncTitleCrawler.crawl("http://www.google.ru")) { result =>
-      result shouldBe("http://www.google.ru", "Google")
+    whenReady(AsyncTitleCrawler.crawl("http://www.yandex.ru")) { result =>
+      result shouldBe("http://www.yandex.ru", "Яндекс")
     }
   }
 

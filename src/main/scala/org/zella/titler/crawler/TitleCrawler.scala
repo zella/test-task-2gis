@@ -10,7 +10,7 @@ trait TitleCrawler {
   type Url = String
 
   /**
-    * Grab title from html page
+    * Grab title
     *
     * @param url
     * @return title of html page
