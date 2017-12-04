@@ -5,7 +5,7 @@ import org.scalatest.Matchers
 import org.scalatest.concurrent.ScalaFutures
 import org.scalatest.time.{Millis, Seconds, Span}
 
-class DispatchTitleCrawlerTest extends Matchers with ScalaFutures {
+class AsyncTitleCrawlerTest extends Matchers with ScalaFutures {
 
 
   //scala test waiting futures conf
