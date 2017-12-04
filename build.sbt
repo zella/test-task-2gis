@@ -7,9 +7,7 @@ mainClass in assembly := Some("org.zella.titler.server.Server")
 test in assembly := {}
 
 assemblyMergeStrategy in assembly := {
-//  case PathList(ps@_*) if ps.last endsWith
-//    "io.netty.versions.properties" => MergeStrategy.first
-      case "io.netty.versions.properties" => MergeStrategy.last
+  case "io.netty.versions.properties" => MergeStrategy.last
   case PathList("META-INF", "MANIFEST.MF") => MergeStrategy.discard
   case x => MergeStrategy.last
 }
